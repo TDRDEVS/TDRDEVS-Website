@@ -98,6 +98,7 @@ nav ul li a:hover {
 .hero-content {
   position: relative;
   z-index: 1;
+  padding: 0 20px;
 }
 
 .hero-content h1 {
@@ -125,8 +126,6 @@ nav ul li a:hover {
 .hero-btn:hover {
   background-color: #9d4edd;
 }
-
-
 
 /* Services Section */
 .services {
@@ -178,9 +177,6 @@ nav ul li a:hover {
   transform: translateY(-10px);
   background-color: #243447;
 }
-
-
-
 
 /* Portfolio Section */
 .portfolio {
@@ -246,14 +242,51 @@ nav ul li a:hover {
   color: #dcdcdc;
 }
 
+/* ========================= */
+/* Mobile Responsive Tweaks  */
+/* ========================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
 
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
 
+  .cta {
+    margin-top: 15px;
+    align-self: center;
+  }
 
+  .hero-content h1 {
+    font-size: 2rem;
+  }
 
+  .hero-content p {
+    font-size: 1rem;
+  }
 
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
 
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
 
-
-
-
+  .portfolio-item img {
+    height: auto;
+  }
+}
