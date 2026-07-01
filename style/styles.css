@@ -1,0 +1,259 @@
+/* General page styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1b2a; /* dark blue background */
+  color: #ffffff;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0d1b2a;
+  border-bottom: 1px solid #1b263b;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #38b000; /* green accent */
+  text-decoration: none;
+}
+
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between icon and text */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #9d4edd; /* purple accent */
+}
+
+/* Call-to-action button */
+.cta {
+  background-color: #38b000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #9d4edd; /* purple hover */
+}
+
+/* Hero Section with video */
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* keep video behind content */
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 27, 42, 0.7); /* dark overlay for readability */
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #38b000; /* green accent */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #9d4edd; /* purple accent */
+}
+
+.hero-btn {
+  background-color: #38b000;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #9d4edd;
+}
+
+
+
+/* Services Section */
+.services {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #1b263b; /* slightly lighter dark blue */
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #38b000; /* green accent */
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #0d1b2a;
+  padding: 30px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #9d4edd; /* purple accent */
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #dcdcdc;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #243447;
+}
+
+
+
+
+/* Portfolio Section */
+.portfolio {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #0d1b2a;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #38b000; /* green accent */
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 250px;        /* fixed height for consistency */
+  object-fit: cover;    /* crops/zooms to fill without distortion */
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(13, 27, 42, 0.8);
+  color: #ffffff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  margin: 0 0 10px;
+  color: #9d4edd; /* purple accent */
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
