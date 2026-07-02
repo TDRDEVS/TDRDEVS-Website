@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TDRDEVS</title>
@@ -12,14 +13,17 @@
 <body>
   <header>
     <!-- Logo -->
-    <a href="#" class="logo">TDRDEVS</a>
+    <a href="#" class="logo">
+  <i class="fa-solid fa-computer"></i> TDRDEVS
+</a>
+
 
     <!-- Navigation -->
     <nav>
       <ul>
-        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
-        <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="About.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+        <li><a href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
         <li><a href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
         <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
       </ul>
@@ -29,36 +33,51 @@
     <a href="#" class="cta">Get Started</a>
   </header>
 
-  <!-- Hero Section with Background Video -->
-  <section class="hero">
-    <video autoplay muted loop class="hero-video">
-      <source src="header_video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-content">
-      <h1>Innovating Business Digitally</h1>
-      <p>Branding • Websites • Applications</p>
-      <a href="#" class="hero-btn">Work With Us</a>
-    </div>
-  </section>
+ <!-- Hero Section with Background Video -->
+<section class="hero">
+  <video autoplay muted loop class="hero-video">
+    <source src="header_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-content">
+    <!-- Circle logo above heading -->
+    <img src="images/TDR_devs_logo.png" alt="TDRDEVS Logo" class="hero-logo">
+
+    <h1>Innovating Business Digitally</h1>
+    <p>Branding • Websites • Applications</p>
+    <a href="#" class="hero-btn">Work With Us</a>
+  </div>
+</section>
 
 
-  <!-- Services Section -->
+
+
+ <!-- Services Section -->
 <section class="services">
   <h2>Our Services</h2>
+  <p class="services-intro">We help businesses stand out with modern branding, websites, and applications.</p>
+  
   <div class="service-cards">
     <div class="card">
-      <i class="fa-solid fa-palette"></i>
+      <div class="icon-circle">
+        <i class="fa-solid fa-palette"></i>
+      </div>
       <h3>Branding</h3>
-      <p>Logo design, brand guidelines, and visual identity to make your business stand out.</p>
+      <p>Logo design, brand guidelines, and visual identity to make your business unforgettable.</p>
     </div>
+    
     <div class="card">
-      <i class="fa-solid fa-laptop-code"></i>
+      <div class="icon-circle">
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
       <h3>Websites</h3>
       <p>Responsive, SEO‑friendly websites built with modern frameworks and clean design.</p>
     </div>
+    
     <div class="card">
-      <i class="fa-solid fa-mobile-screen-button"></i>
+      <div class="icon-circle">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+      </div>
       <h3>Applications</h3>
       <p>Custom business apps and workflow automation tailored to your company’s needs.</p>
     </div>
@@ -66,9 +85,10 @@
 </section>
 
 
+
 <!-- Portfolio Section -->
 <section class="portfolio">
-  <h2>Our Work</h2>
+  <center><h2>Our Work</h2></center>
   <div class="portfolio-grid">
     <div class="portfolio-item">
       <img src="images/branding.jpg" alt="Project 1">
@@ -97,18 +117,29 @@
 <footer>
   <div class="footer-content">
     <p>&copy; 2026 TDRDEVS. All rights reserved.</p>
+
     <div class="footer-links">
       <a href="#"><i class="fa-solid fa-envelope"></i> Contact</a>
       <a href="#"><i class="fa-solid fa-circle-info"></i> About</a>
       <a href="#"><i class="fa-solid fa-shield-halved"></i> Privacy</a>
     </div>
+
     <div class="footer-social">
       <a href="#"><i class="fa-brands fa-facebook"></i></a>
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
     </div>
+
+    <div class="footer-newsletter">
+      <p>Subscribe to our newsletter</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
   </div>
 </footer>
+
 
 </body>
 </html>
