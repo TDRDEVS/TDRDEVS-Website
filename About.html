@@ -4,110 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - TDRDEVS</title>
-  <!-- Font Awesome (Cloudflare CDN) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Your main stylesheet -->
   <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-  <header>
-    <!-- Logo -->
-    <a href="index.html" class="logo">
-      <i class="fa-solid fa-computer"></i> TDRDEVS
+  <header class="site-header">
+    <a href="index.html" class="logo" aria-label="TDRDEVS Home">
+      <i class="fa-solid fa-computer" aria-hidden="true"></i> TDRDEVS
     </a>
 
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="about.html" class="active"><i class="fa-solid fa-circle-info"></i> About</a></li>
-        <li><a href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
-        <li><a href="portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-      </ul>
-    </nav>
-     <!-- Call-to-action button -->
-    <a href="#" class="cta">View Portfolio</a>
-  </header>
-  </header>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-  <section class="about">
-  <video autoplay muted loop class="about-video">
-    <source src="about_header_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-    <div class="about-container">
-    <!-- Founder Image -->
-    <div class="founder-image">
-      <img src="images/Team.jpeg" alt="Founder Tshepang Ramohapi">
+    <div class="nav-wrapper">
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+          <li><a href="about.html" class="active"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Services</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Portfolio</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="portfolio.html" class="cta">View Portfolio</a>
     </div>
-  <div class="about-container">
-    <div class="about-text">
-      <h2>About Us</h2>
-      <p>
-        At <span class="highlight">TDRDEVS</span>, we specialize in creating digital solutions 
-        that empower businesses to thrive online. From branding and websites 
-        to custom applications, our mission is to innovate and deliver 
-        professional results that make an impact.
-      </p>
-      <p>
-        Founded in 2026 by <span class="highlight">Tshepang Ramohapi</span>, 
-        we combine creativity, technology, and strategy to help companies 
-        stand out in a competitive digital world.
-      </p>
-      <p>
-        Our values are built on <span class="highlight">innovation</span>, 
-        <span class="highlight">professionalism</span>, and 
-        <span class="highlight">user‑centric design</span>.
-      </p>
-      <a href="services.html" class="about-btn">Explore Our Services</a>
-    </div>
-  </div>
-</section>
+  </header>
 
+  <main>
+    <section class="about">
+      <video autoplay muted loop playsinline class="about-video">
+        <source src="about_header_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-<section class="about-presets">
-  <div class="preset">
-    <i class="fa-solid fa-bullseye"></i>
-    <h3>Our Mission</h3>
-    <p>To empower businesses with innovative digital solutions that drive growth and success.</p>
-  </div>
-  <div class="preset">
-    <i class="fa-solid fa-eye"></i>
-    <h3>Our Vision</h3>
-    <p>To be a trusted leader in digital transformation, helping companies thrive in the modern era.</p>
-  </div>
-  <div class="preset">
-    <i class="fa-solid fa-heart"></i>
-    <h3>Our Values</h3>
-    <p>Innovation, professionalism, and user‑centric design are at the core of everything we do.</p>
-  </div>
-</section>
+      <div class="about-container">
+        <div class="founder-image">
+          <img src="images/Team.jpeg" alt="Founder Tshepang Ramohapi">
+        </div>
 
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            At <span class="highlight">TDRDEVS</span>, we specialize in creating digital solutions
+            that empower businesses to thrive online. From branding and websites
+            to custom applications, our mission is to innovate and deliver
+            professional results that make an impact.
+          </p>
+          <p>
+            Founded in 2026 by <span class="highlight">Tshepang Ramohapi</span>,
+            we combine creativity, technology, and strategy to help companies
+            stand out in a competitive digital world.
+          </p>
+          <p>
+            Our values are built on <span class="highlight">innovation</span>,
+            <span class="highlight">professionalism</span>, and
+            <span class="highlight">user-centric design</span>.
+          </p>
+          <a href="services.html" class="about-btn">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
 
+    <section class="about-presets">
+      <article class="preset">
+        <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+        <h3>Our Mission</h3>
+        <p>To empower businesses with innovative digital solutions that drive growth and success.</p>
+      </article>
 
+      <article class="preset">
+        <i class="fa-solid fa-eye" aria-hidden="true"></i>
+        <h3>Our Vision</h3>
+        <p>To be a trusted leader in digital transformation, helping companies thrive in the modern era.</p>
+      </article>
 
-  <!-- Footer -->
+      <article class="preset">
+        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+        <h3>Our Values</h3>
+        <p>Innovation, professionalism, and user-centric design are at the core of everything we do.</p>
+      </article>
+    </section>
+  </main>
+
   <footer>
     <div class="footer-content">
       <p>&copy; 2026 TDRDEVS. All rights reserved.</p>
 
-      <div class="footer-links">
-        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
-        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-        <a href="privacy.html"><i class="fa-solid fa-shield-halved"></i> Privacy</a>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a>
+        <a href="about.html"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a>
+        <a href="privacy.html"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Privacy</a>
       </div>
 
-      <div class="footer-social">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <div class="footer-social" aria-label="Social links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
       </div>
 
       <div class="footer-newsletter">
         <p>Subscribe to our newsletter</p>
         <form>
-          <input type="email" placeholder="Enter your email" required>
+          <input type="email" placeholder="Enter your email" aria-label="Email address" required>
           <button type="submit">Subscribe</button>
         </form>
       </div>
