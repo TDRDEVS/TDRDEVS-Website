@@ -12,23 +12,30 @@
 <body>
   <!-- Header -->
   <header>
-    <!-- Logo -->
     <a href="index.html" class="logo">
       <i class="fa-solid fa-computer"></i> TDRDEVS
     </a>
 
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
-        <li><a href="services.html" class="active"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
-        <li><a href="portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-      </ul>
-    </nav>
-    <!-- Call-to-action button -->
-    <a href="portfolio.html" class="cta">View Portfolio</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="nav-wrapper">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+          <li><a href="services.html" class="active"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="portfolio.html" class="cta">View Portfolio</a>
+    </div>
   </header>
 
  <!-- Services Section -->

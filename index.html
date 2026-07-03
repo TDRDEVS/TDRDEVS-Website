@@ -1,145 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TDRDEVS</title>
-  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- External stylesheet -->
   <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-  <header>
-    <!-- Logo -->
-    <a href="#" class="logo">
-  <i class="fa-solid fa-computer"></i> TDRDEVS
-</a>
+  <header class="site-header">
+    <a href="index.html" class="logo" aria-label="TDRDEVS Home">
+      <i class="fa-solid fa-computer" aria-hidden="true"></i> TDRDEVS
+    </a>
 
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="About.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
-        <li><a href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
-        <li><a href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-      </ul>
-    </nav>
+    <div class="nav-wrapper">
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Services</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Portfolio</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a></li>
+        </ul>
+      </nav>
 
-    <!-- Call-to-action button -->
-    <a href="#" class="cta">Get Started</a>
+      <a href="contact.html" class="cta">Get Started</a>
+    </div>
   </header>
 
- <!-- Hero Section with Background Video -->
-<section class="hero">
-  <video autoplay muted loop class="hero-video">
-    <source src="header_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <div class="hero-content">
-    <!-- Circle logo above heading -->
-    <img src="images/TDR_devs_logo.png" alt="TDRDEVS Logo" class="hero-logo">
+  <main>
+    <section class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="header_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-    <h1>Innovating Business Digitally</h1>
-    <p>Branding • Websites • Applications</p>
-    <a href="#" class="hero-btn">Work With Us</a>
-  </div>
-</section>
-
-
-
-
- <!-- Services Section -->
-<section class="services">
-  <h2>Our Services</h2>
-  <p class="services-intro">We help businesses stand out with modern branding, websites, and applications.</p>
-  
-  <div class="service-cards">
-    <div class="card">
-      <div class="icon-circle">
-        <i class="fa-solid fa-palette"></i>
+      <div class="hero-content">
+        <img src="images/TDR_devs_logo.png" alt="TDRDEVS Logo" class="hero-logo">
+        <h1>Innovating Business Digitally</h1>
+        <p>Branding • Websites • Applications</p>
+        <a href="contact.html" class="hero-btn">Work With Us</a>
       </div>
-      <h3>Branding</h3>
-      <p>Logo design, brand guidelines, and visual identity to make your business unforgettable.</p>
-    </div>
-    
-    <div class="card">
-      <div class="icon-circle">
-        <i class="fa-solid fa-laptop-code"></i>
+    </section>
+
+    <section class="services">
+      <h2>Our Services</h2>
+      <p class="services-intro">We help businesses stand out with modern branding, websites, and applications.</p>
+
+      <div class="service-cards">
+        <article class="card">
+          <div class="icon-circle">
+            <i class="fa-solid fa-palette" aria-hidden="true"></i>
+          </div>
+          <h3>Branding</h3>
+          <p>Logo design, brand guidelines, and visual identity to make your business unforgettable.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">
+            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+          </div>
+          <h3>Websites</h3>
+          <p>Responsive, SEO-friendly websites built with modern frameworks and clean design.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">
+            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          </div>
+          <h3>Applications</h3>
+          <p>Custom business apps and workflow automation tailored to your company’s needs.</p>
+        </article>
       </div>
-      <h3>Websites</h3>
-      <p>Responsive, SEO‑friendly websites built with modern frameworks and clean design.</p>
-    </div>
-    
-    <div class="card">
-      <div class="icon-circle">
-        <i class="fa-solid fa-mobile-screen-button"></i>
+    </section>
+
+    <section class="portfolio">
+      <h2>Our Work</h2>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <img src="images/branding.jpg" alt="Brand identity project">
+          <div class="overlay">
+            <h3>Brand Identity</h3>
+            <p>Logo and visual guidelines for a startup.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="images/web.jpg" alt="Website design project">
+          <div class="overlay">
+            <h3>Website Design</h3>
+            <p>Responsive business website with SEO optimization.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="images/app.jpg" alt="Mobile application project">
+          <div class="overlay">
+            <h3>Mobile Application</h3>
+            <p>Custom app for workflow automation.</p>
+          </div>
+        </article>
       </div>
-      <h3>Applications</h3>
-      <p>Custom business apps and workflow automation tailored to your company’s needs.</p>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 TDRDEVS. All rights reserved.</p>
 
+      <div class="footer-links" aria-label="Footer links">
+        <a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a>
+        <a href="about.html"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a>
+        <a href="privacy.html"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Privacy</a>
+      </div>
 
-<!-- Portfolio Section -->
-<section class="portfolio">
-  <center><h2>Our Work</h2></center>
-  <div class="portfolio-grid">
-    <div class="portfolio-item">
-      <img src="images/branding.jpg" alt="Project 1">
-      <div class="overlay">
-        <h3>Brand Identity</h3>
-        <p>Logo and visual guidelines for a startup.</p>
+      <div class="footer-social" aria-label="Social links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="footer-newsletter">
+        <p>Subscribe to our newsletter</p>
+        <form>
+          <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
-    <div class="portfolio-item">
-      <img src="images/web.jpg" alt="Project 2">
-      <div class="overlay">
-        <h3>Website Design</h3>
-        <p>Responsive business website with SEO optimization.</p>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <img src="images/app.jpg" alt="Project 3">
-      <div class="overlay">
-        <h3>Mobile Application</h3>
-        <p>Custom app for workflow automation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2026 TDRDEVS. All rights reserved.</p>
-
-    <div class="footer-links">
-      <a href="#"><i class="fa-solid fa-envelope"></i> Contact</a>
-      <a href="#"><i class="fa-solid fa-circle-info"></i> About</a>
-      <a href="#"><i class="fa-solid fa-shield-halved"></i> Privacy</a>
-    </div>
-
-    <div class="footer-social">
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    </div>
-
-    <div class="footer-newsletter">
-      <p>Subscribe to our newsletter</p>
-      <form>
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</footer>
-
-
+  </footer>
 </body>
 </html>
